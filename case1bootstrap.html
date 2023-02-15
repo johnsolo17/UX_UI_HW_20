@@ -1,33 +1,74 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/index.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas Neue">
     <title>WeGig Case Study</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style1.css" rel="stylesheet">
   </head>
 
   <!--Header Section-->
 
   <body>
     <header>
-      <img src="images/logoplaceholder.png" alt="logo">
-      <ul>
-        <li>ABOUT</li>
-        <li>SKILLS</li>
-        <li>WORK</li>
-        <li>CONTACT</li>
+      <img src="images/logoplaceholder1.png" alt="logo">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">WeGig Case Study</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">BUBL Case Study</a>
+              <a class="dropdown-item" href="#">NSA Case Study</a>
+              <a class="dropdown-item" href="#">YMCA Case Study</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
       </ul>
     </header>
 
-  <!--Project Showcase Section-->
+  <!--Jumbotron Section-->  
 
+  <br>
+  <div class="jtron">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+    <h1 class="display-4">WeGig Case Study</h1>
+    <br>
+    <p class="lead">Finding new places to gig can be difficult for musicians, while filling in empty slots on the schedule can be difficult for venue operators. Both parties expressed frustrations with communication gaps about elements of the performance. For musicians, frustrations centered around the logistics of the performance time and stage area as well as ensuring prompt payment. For venue operators, frustrations centered around the time required for back and forth communication regarding booking and keeping abreast of popular new performers.</p>
+    <hr class="my-4">
+    <div class="workContent2">
+        <h4>The Solution</h4>
+        <p><span style="font-weight: bold;">WeGig</span> makes the booking process easier by:</p>
+         <ul class="solutionList">
+          <li>By allowing musicians to see details and photos of each venue in advance</li>
+          <li>By allowing venue operators to look at profiles of musicians and hear music clips before booking</li>
+          <li>By simplifying two-way communication through the  messaging and calendar features</li>
+         </ul>
+        <p>Furthermore, the app promotes professionalism and accountability on both sides by encouraging that musicians and venues rate each other following a performance.</p>
+      </div>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="#" role="button" onclick="myFunction()">Learn more</a>
+    </p>
+    </div>
+  </div>
+  </div>
+  <br>
+
+  <!--Project Showcase Section-->
+<!--
   <section class="project1">
     <h1 class="heading">WeGig Case Study</h1>
     <div class="workGrid1">
       <div class="workImg1">
-       <img src="images/wegigLogo.gif">
+       <img src="images/roygbot.png">
       </div>
       <br>
       <div class="workContent1">
@@ -46,11 +87,34 @@
       </div>      
     </div>
   </section>
-  <div class="h-divider">
-    <div class="shadow"></div>
+  -->
+  
 
   <!--Case Study Expanded-->
 
+  <div id="myDIV">
+    <section class="collapsePersona">
+    <p>
+        <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">User Persona 1</a>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">User Persona 2</button>
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="card card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <div class="card card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   <section class="researchArea">
     <h1 class="heading">User Research</h1>
     <br>
@@ -72,7 +136,7 @@
              <li>3 User Interviews with Venue Owners/Operators</li>
              <li>13 Survey Responses</li>   
             </ul>
-          </div>
+        </div>
            <br>
       <div class="researchContent1">
         <h4>Insight From Research</h4>
@@ -86,7 +150,7 @@
           <li>Venue operators had frustrations with musicians who did not show professionalism about the gig, either by getting drunk or by not adapting their show to the needs of the venue and audience.</li>
         </ul>
       </div>
-    </div>
+    
   </section>
   <br>
   <section class="researchArea1">
@@ -122,7 +186,6 @@
 
   <section class="userFlowarea">
    <div class="flowArea">
-    <h4>User Flow</h4>
     <div class="flowImg1">
       <img src="images/userFlow.png" alt="User Flow">
     </div>
@@ -132,60 +195,8 @@
     </div>
    </div>
   </section>
-
-  <!--lo/mid Fidelity Section-->
-
-  <section class="iterationsArea">
-     <div class="iterations">
-      <h4>Sketches and Wireframes</h4>
-      <br>
-     <div class="lofiPic">
-      <img src="images/lofi.png" alt="LoFi Prototype">
-    </div>
-    <br>
-   <div class="midfiPic">
-    <img src="images/midfi.png" alt="MidFi Prototype">
-   </div>
-    </div>
-    <br>
-  </section>
-
-  <!--User Testing-->
-
-  <section class="testingArea">
-    <h4>User Tests</h4>
-    <div class="testingResults">
-     <br>
-    <div class="testInfo">
-     <p>Testing Parameters</p>
-     <ul>
-      <li>6 Users</li>
-      <li>3 Tasks as a Venue Owner
-        <ul>
-          <li>Create a Profile</li>
-          <li>Book a Gig</li>
-          <li>Leave a Review</li>
-        </ul>
-      </li>
-      <li>3 Tasks as a Musician
-       <ul>
-        <li>Create a Profile</li>
-        <li>Book a Gig</li>
-        <li>Leave a Review</li>
-      </li>
-       </ul>
-      </li>
-     </ul>
-   </div>
-   </div>
-   <br>
-  <div class="testingResults1"> 
-  <div class="testInfo1">
-   <p>Our user test results informed us that the onboarding was user friendly, but users were struggling to book gigs and musicians and then review from the profile pages.</p>
-  </div>
-  </div>
-   <br>
- </section>
+</div>
+</div>
     
   <!--Footer Section-->
 
@@ -205,5 +216,9 @@
       <div href=""><img src="images/github.png" alt="GitHub" height="40px" width="40px"></div>
     </div>
   </footer>
+   <script src="js/index.js"></script>
 </body>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 </html>

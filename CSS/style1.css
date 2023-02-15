@@ -6,7 +6,6 @@ body {
 header {
     background-color: #533A7B;
     padding: 15px;
-    
     background-image: linear-gradient(rgba(105, 105, 105, 0.5), rgba(0, 0, 0, 0.5));
 }
 header ul {
@@ -15,18 +14,20 @@ header ul {
     text-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     font-family: "Bebas Neue", display;
     font-weight: bold;
-    font-size: x-large; 
+    font-size: x-large;
 }
 header a {
   text-decoration: none;
   color: white;
   font-weight: bold;
 }
+.nav-item {
+    color: white;
+}
 header li {
     display: inline-block;
     padding: 0px 5px;
     position: relative;
-    bottom: 10px;
 }
 header img {
   height: 50px;  
@@ -261,27 +262,7 @@ header p {
     padding-left: 60px;
     padding-right: 60px;
 }
-.h-divider {
-  margin: auto;
-  margin-top: 80px;
-  width: 80%;
-  position: relative;
-}
 
-.h-divider .shadow {
-  overflow: hidden;
-  height: 40px;
-}
-
-.h-divider .shadow:after {
-  content: '';
-  display: block;
-  margin: -25px auto 0;
-  width: 100%;
-  height: 25px;
-  border-radius: 125px/12px;
-  box-shadow: 0 0 8px black;
-}
 .box {
   background: white;
   margin: auto;
@@ -486,14 +467,46 @@ font-size: x-large;
   margin-bottom: 20px;
 }
 
+  /* Jumbotron Area */
+
+.jtron {
+    font-family: "Bebas Neue", display;
+    border-radius: 10px;
+    margin: 20px;
+    margin-top: 110px;
+    margin-bottom: 110px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 200px;
+    margin-right: 200px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.btn {
+    background-image: linear-gradient(rgba(105, 105, 105, 0.5), rgba(0, 0, 0, 0.5));
+    background-color: #533A7B;
+    border-color: transparent;    
+}
+
+.collapsePersona {
+    margin: 20px; 
+}
+.collapsePersona p {
+    width: 50%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
   /* Research Area */
 
-.researchArea {
+  .researchArea {
     padding: 60px 30px;
     padding-top: 10px;
     background-color: white;
 }
-.researchArea, .researchGrid1 h4 {
+.personasHead h4 {
   font-size: x-large;
   font-family: "Bebas Neue", display;
   text-align: center;
@@ -536,14 +549,12 @@ font-size: x-large;
 }
 .researchImg1 {
   border-radius: 10px;
-  float: left;
   padding: 8px;
   width: 48%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .researchImg2 {
   border-radius: 10px;
-  float: right;
   padding: 8px;
   width: 48%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -552,7 +563,8 @@ font-size: x-large;
   content: "";
   display: table;
   clear: both;
-}
+}  
+
 @media screen and (max-width:600px) {
   .researchImg1, .researchImg2 {
     width: 95%;
@@ -692,13 +704,6 @@ font-size: x-large;
 
   /* User Flow Section */
 
-  .flowArea h4 {
-  font-size: x-large;
-  font-family: "Bebas Neue", display;
-  text-align: center;
-  margin-top: 2px;
-  padding-top: 6px;
-}
   .userFlowarea {
     padding: 60px 30px;
     padding-top: 10px;
@@ -717,99 +722,6 @@ font-size: x-large;
     border-radius: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;    
   }
-
-  /* lo/mid Fidelity Section */
-
-  .iterations h4 {
-  font-size: x-large;
-  font-family: "Bebas Neue", display;
-  text-align: center;
-  margin-top: 2px;
-  padding-top: 6px;
-}
-  .iterationsArea {
-    padding: 60px 30px;
-    padding-top: 10px;
-    background-color: white;
-  }
-  .iterations {
-    margin: 0 auto;
-    overflow: auto;
-    padding-bottom: 5px;
-  }
-  .iterations img {
-    width: 70%;  
-    display: block;
-    margin: 0 auto;
-    padding: 8px;
-    border-radius: 10px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;    
-  }
-
-  /* User Test Section */
-
-    .testingArea h4 {
-  font-size: x-large;
-  font-family: "Bebas Neue", display;
-  text-align: center;
-  margin-top: 2px;
-  padding-top: 6px;
-}
-  .testingArea {
-    padding: 60px 30px;
-    padding-top: 10px;
-    background-color: white;
-  }
-  .testingResults {
-    margin: 0 auto;
-    float: left;
-    width: 20%;
-    padding-bottom: 5px;
-  }
-  .testingResults1 {
-    margin: 0 auto;
-    float: right;
-    width: 20%;
-    padding-bottom: 5px;
-  }
-  .testingResults img {
-    width: 70%;  
-    display: block;
-    margin: 0 auto;
-    padding: 8px;
-    border-radius: 10px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;    
-  }
-  .testInfo {
-  text-align: left;
-  font-size: large;
-  font-family: "Bebas Neue", display;
-  margin: 0 auto;
-  position: relative;
-  top: -20px;
-  margin-bottom: 20px;
-  padding-top: 5px;
-  padding-left: 20px;
-  padding-bottom: 5px;
-  padding-right: 20px;
-  border-radius: 10px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; 
-}
-.testInfo1 {
-  text-align: right;
-  font-size: large;
-  font-family: "Bebas Neue", display;
-  margin: 0 auto;
-  position: relative;
-  top: -20px;
-  margin-bottom: 20px;
-  padding-top: 5px;
-  padding-left: 20px;
-  padding-bottom: 5px;
-  padding-right: 20px;
-  border-radius: 10px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; 
-}
 
   /* Footer Section */
 
